@@ -1,0 +1,23 @@
+
+.logo {
+    font-family: $secondaryFont;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(28/24);
+    color: $accentColor;
+
+    &--second-black {
+        color: #000000;
+    }
+    
+    &--second-white {
+        color: $mainTitleColor;
+    }
+
+    @media screen and (min-width:$desctop) {
+        font-size: 26px;
+        line-height: calc(31/26); 
+    }
+}
+
+

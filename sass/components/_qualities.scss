@@ -1,0 +1,76 @@
+
+.qualities {
+
+    @media screen and (min-width:$desctop){
+    padding-bottom: 0;
+    }
+}
+
+.qualities__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+    
+    @media screen and (min-width:$tablet){
+    flex-direction: row;
+    }
+   
+}
+
+.qualities__item {
+
+    @media screen and (min-width:$tablet){
+        flex-basis: calc((100% - 30px * 1)/2);  
+    }
+
+    @media screen and (min-width:$desctop){
+       flex-basis: calc((100% - 30px * 3)/4);  
+    }
+    
+}
+
+.qualities__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+
+    background-color: $teamBgColor;
+    
+    @media screen and (min-width:$tablet){
+        width: 354px;
+    }
+
+    @media screen and (min-width:$tablet) and (max-width:calc($desctop - 1px)){
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    @media screen and (min-width:$desctop){
+        width: 270px;  
+    }
+
+}
+
+.qualities__title {
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    text-transform: uppercase;
+    text-align: center;
+    color: $titleColor;
+
+    @media screen and (min-width:$tablet){
+    text-align:left;
+    }
+    
+}
+
+.qualities__text {
+    line-height: calc(24/14);
+}

@@ -1,0 +1,28 @@
+.address{
+    margin-bottom: 60px;
+
+    @media screen and (min-width:$desctop) {
+        margin-bottom: 0;    
+    }
+}
+
+.address__item:not(:last-child) {
+    margin-bottom: 12px;
+}
+.address__link {
+    line-height: calc(16/14);
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.6);
+
+    transition: color 250ms $timingFunction;
+
+    &--white {
+        color: $mainTitleColor;
+    }
+    
+    &:hover,
+    &:focus {
+        color: $accentColor;
+    }
+}
+

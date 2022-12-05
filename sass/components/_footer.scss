@@ -1,0 +1,56 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: $bgColor;
+}
+
+.footer__container {
+    display: block;
+    text-align: center;
+
+    @media screen and (min-width:$desctop){
+        display: flex;
+        gap: 94px;
+        align-items: baseline;
+        text-align:left;
+    }
+}
+
+.footer__logo {
+    display: block;
+    margin-bottom: 28px;
+}
+
+.footer__text{
+    font-weight: 700;
+    line-height: calc(16/14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $mainTitleColor;
+    margin-bottom: 20px;
+}
+
+.contacts-info{ 
+    @media screen and (min-width:$tablet){
+        display: flex;
+        gap: 165px;
+        align-items: baseline;
+    }
+
+    @media screen and (min-width:$desctop){
+        gap: 94px;
+    }
+
+}
+
+.footer__contacts{
+    
+    @media screen and (min-width:$tablet){
+        margin-left: 60px;
+    }
+
+    @media screen and (min-width:$desctop){
+        margin-left: 0;
+    }
+}

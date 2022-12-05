@@ -1,0 +1,78 @@
+
+.hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: $bgColor;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    // mobile screen
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_s@1x.jpg);
+   
+    // mobile screen retina
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_s@2x.jpg);  
+    }
+    
+    // tablet screen
+    @media screen and (min-width:calc($mobile + 1px)){
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_m@1x.jpg);
+   
+    // tablet screen retina
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_m@2x.jpg);  
+    }
+    }
+
+    // desctop screen
+    @media screen and (min-width:calc($tablet + 1px)){
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_l@1x.jpg);
+       
+    // desctop screen retina
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_l@2x.jpg);  
+        }
+    }
+  
+    @media screen and (min-width:$desctop) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+
+}
+
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.hero__title {
+    margin-bottom: 30px;
+
+    font-weight: 900;
+    font-size: 26px;
+    line-height: calc(42/26);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $mainTitleColor;
+
+    @media screen and (min-width:$desctop) {
+        font-size: 44px;
+        line-height: calc(60/44);  
+    }
+}
