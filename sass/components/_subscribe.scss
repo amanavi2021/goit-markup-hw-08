@@ -20,7 +20,7 @@
 }
 
 .subscribe__form {
-    width: 450px;
+    max-width: 450px;
     display: flex;
     gap: 20px;
     flex-direction: column;
@@ -28,7 +28,7 @@
     align-items: center;
 
     @media screen and (min-width:$desctop) {
-        width: 570px;
+        max-width: 570px;
         flex-direction: row;
         gap: 12px;
     }
@@ -46,6 +46,11 @@
     background-color: inherit;
     outline: transparent;
 
+    @media screen and (max-width:calc($mobile - 1px)) {
+        width: 290px;
+    }
+    
+    
     @media screen and (min-width:$desctop) {
         width: 358px;
     }

@@ -59,11 +59,12 @@
             right: 15px;
         }
     }
-
-    @media screen and (min-width:$tablet) {
+    
+     @media screen and (min-width:$tablet) {
         display: none;
     } 
 }
+
 
 .mobile-nav__list {
     display: flex;
